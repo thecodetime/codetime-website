@@ -21,6 +21,11 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
       - run: yarn test
+      - run: ssh-keyscan -H thecodetime.com >> ~/.ssh/known_hosts
+      - run:
+          name: Deploy to Production server
+          command: |
+            git push deploy@thecodetime.com:production_codetime.git master
 
 
 
