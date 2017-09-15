@@ -1,0 +1,27 @@
+.cursor-on {
+  border-right: 1em solid $green_100;
+}
+.cursor-off {
+  border-right: 1em solid $white_100;
+}
+h1 {
+  display: inline-block;
+  padding-right: 0.35em;
+}
+img {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  box-shadow: 0px 4px 10px 0px $grey_100;
+  border-radius: 50%;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  color: white;
+  left: 0;
+  letter-spacing: 0.25em;
+}
